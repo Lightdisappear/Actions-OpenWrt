@@ -13,6 +13,8 @@
 
     nvram set flag_boot_success=1 & nvram commit & /etc/init.d/dropbear enable & /etc/init.d/dropbear start
 
+    # excute in ssh
+    # python -m http.server
     mtd -r write /tmp/*.factory.bin firmware
     ```
 
