@@ -34,3 +34,15 @@ src/gz packages https://downloads.openwrt.org/releases/packages-22.03/aarch64_co
 src/gz routing https://downloads.openwrt.org/releases/packages-22.03/aarch64_cortex-a53/routing
 src/gz telephony https://downloads.openwrt.org/releases/packages-22.03/aarch64_cortex-a53/telephony
 ```
+
+## Optimize
+
+another driver of wifi
+
+```bash
+# https://github.com/openwrt/mt76/blob/master/firmware/mt7915_eeprom.bin
+cp /tmp/mt7915_eeprom.bin /lib/firmware/mediatek/
+rmmod /lib/modules/5.10.111/mt7915e.ko
+insmod mt7915e
+dmesg | tail
+```
