@@ -16,9 +16,15 @@ Build OpenWrt using GitHub Actions
 
 ```bash
 
+# install dependencies
+sudo apt update
+sudo apt install build-essential clang flex bison g++ gawk gcc-multilib g++-multilib \
+gettext git libncurses-dev libssl-dev python3-distutils rsync unzip zlib1g-dev \
+file wget
+
 # clone openwrt
 # use stable version if need
-git clone https://github.com/openwrt/openwrt -b v22.03.3
+git clone https://github.com/openwrt/openwrt -b v22.03
 
 # update and install feeds(packages)
 ./scripts/feeds update -a
