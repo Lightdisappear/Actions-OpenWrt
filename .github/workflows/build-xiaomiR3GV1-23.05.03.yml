@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt 23.05.3 for Xiaomi R3G V1
+name: Build OpenWrt 23.05.03 for Xiaomi R3G V1
 
 on:
   repository_dispatch:
@@ -29,7 +29,7 @@ env:
   # REPO_URL: https://github.com/immortalwrt/immortalwrt
   # REPO_BRANCH: openwrt-18.06
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: xiaomi_r3g_v1/xiaomir3gv1_v23.05.3
+  CONFIG_FILE: xiaomi_r3g_v1/xiaomir3gv1_v23_05_3
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
